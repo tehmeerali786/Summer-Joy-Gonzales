@@ -20,4 +20,17 @@ if ( ! function_exists( 'negocio_business_credit' ) ) {
 	}
 }
 
+// testimonials image size and new
+add_image_size( 'testimonial-tax', 253, 253, true);
+
+
+// excluding testimonials from blog main.
+function exclude_testimonials( $query ) {
+    if ( !$query->is_category('testimonial') && $query->is_main_query() ) {
+        $query->set( 'cat', '-5' );
+    }
+}
+add_action( 'pre_get_posts', 'exclude_testimonials' );
+
+
 ?>
