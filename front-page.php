@@ -17,12 +17,16 @@ get_header(); ?>
 
 
 
+			<section id="section-carousel">
+
 			<div id="front-carousel" >
 
 
 				<?php echo do_shortcode("[slide-anything id='133']"); ?>
 
 			</div>
+
+			</section>
 
 														<section id="testimonials">
 																<div class="indent clear">
@@ -59,6 +63,61 @@ get_header(); ?>
 																	?>
 																</div><!-- .indent -->
 															</section><!-- #testimonials -->
+
+
+				<section id="aboutof" >
+
+														<div class="indent clear">
+																				<?php
+																					$query = new WP_Query( 'pagename=About Our Firm' );
+																					// The Loop
+																					if ( $query->have_posts() ) {
+																						while ( $query->have_posts() ) {
+																							$query->the_post();
+																							echo '<h2 class="section-title">' . get_the_title() . '</h2>';
+																							echo '<div class="entry-content">';
+																							the_content();
+																							echo '</div>';
+																						}
+																					}
+
+																					/* Restore original Post Data */
+																					wp_reset_postdata();
+																					?>
+															 </div><!-- .indent -->
+
+
+
+
+
+				</section>
+
+				<section id="ourwork" >
+
+														<div class="indent clear">
+																				<?php
+																					$query = new WP_Query( 'pagename=Our Work' );
+																					// The Loop
+																					if ( $query->have_posts() ) {
+																						while ( $query->have_posts() ) {
+																							$query->the_post();
+																							echo '<h2 class="section-title">' . get_the_title() . '</h2>';
+																							echo '<div class="entry-content">';
+																							the_content();
+																							echo '</div>';
+																						}
+																					}
+
+																					/* Restore original Post Data */
+																					wp_reset_postdata();
+																					?>
+															 </div><!-- .indent -->
+
+
+
+
+
+				</section>
 
 
 

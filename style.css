@@ -105,3 +105,40 @@ Text Domain: SummerJoyGonzales
         text-align: center;
     }
 }
+
+ /* front page about our firm */
+
+ #aboutof {
+
+   background-color: 	#FFE4C4;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 20px;
+   border-radius: 25px;
+   margin-bottom: 20px;
+ }
+
+ /* front page our work */
+
+ #ourwork {
+
+   background-color: 	#FFF8DC;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 20px;
+   border-radius: 25px;
+   margin-bottom: 20px;
+ }
+
+ /* sticking header at top  */
+
+ div#header {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.top-header {
+    padding: 8px 0;
+    border-bottom: 0px solid white;
+}
