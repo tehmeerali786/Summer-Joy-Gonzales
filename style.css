@@ -17,12 +17,25 @@ Text Domain: SummerJoyGonzales
 }
 }
 
-* TESTIMONIALS */
+/* TESTIMONIALS */
 
 #testimonials {
     padding: 4rem 0;
     background: hsl(0, 0%, 90%);
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
+
+#testimonialspage {
+    padding: 4rem 0;
+    background: hsl(0, 0%, 90%);
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .testimonials {
     margin: 0;
     padding: 0;
