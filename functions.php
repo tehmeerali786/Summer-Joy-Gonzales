@@ -27,7 +27,7 @@ add_image_size( 'testimonial-tax', 253, 253, true);
 // excluding testimonials from blog main.
 function exclude_testimonials( $query ) {
     if ( !$query->is_category('testimonial') && $query->is_main_query() ) {
-        $query->set( 'cat', '-5' );
+        $query->set( 'cat', '-3' );
     }
 }
 add_action( 'pre_get_posts', 'exclude_testimonials' );

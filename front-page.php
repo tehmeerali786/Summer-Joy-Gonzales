@@ -22,7 +22,7 @@ get_header(); ?>
 			<div id="front-carousel" >
 
 
-				<?php echo do_shortcode("[slide-anything id='133']"); ?>
+				<?php echo do_shortcode("[slide-anything id='87']"); ?>
 
 			</div>
 
